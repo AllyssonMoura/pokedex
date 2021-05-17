@@ -90,7 +90,7 @@ class Details extends StatelessWidget {
                             color: white,
                             fontSize: 22,
                             fontWeight: FontWeight.w700)),
-                    Text(pokemon.abiliity,
+                    Text(pokemon.ability,
                         style: TextStyle(
                             fontSize: 17, fontWeight: FontWeight.w700))
                   ],

@@ -5,7 +5,7 @@ class Pokemon {
   double height;
   double weight;
   String type;
-  String abiliity;
+  String ability;
   String weakness1;
   String weakness2;
   String weakness3;
@@ -17,7 +17,7 @@ class Pokemon {
     required this.height,
     required this.weight,
     required this.type,
-    required this.abiliity,
+    required this.ability,
     required this.weakness1,
     required this.weakness2,
     required this.weakness3,

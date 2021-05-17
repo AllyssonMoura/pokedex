@@ -13,10 +13,10 @@ class Home extends StatelessWidget {
       height: 0.6,
       weight: 8.5,
       type: "Fogo",
-      abiliity: "Chama",
-      abiliity1: "Água",
-      abiliity2: "Terra",
-      abiliity3: "Rocha");
+      ability: "Chama",
+      weakness1: "Água",
+      weakness2: "Terra",
+      weakness3: "Rocha");
 
   @override
   Widget build(BuildContext context) {
