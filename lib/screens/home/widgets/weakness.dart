@@ -16,7 +16,7 @@ class Weakness extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                  child: Text(pokemon.abiliity1,
+                  child: Text(pokemon.weakness1,
                       textAlign: TextAlign.center,
                       style: TextStyle(color: white, fontSize: 20)),
                   width: 100,
@@ -33,7 +33,7 @@ class Weakness extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                  child: Text(pokemon.abiliity2,
+                  child: Text(pokemon.weakness2,
                       textAlign: TextAlign.center,
                       style: TextStyle(color: white, fontSize: 20)),
                   width: 100,
@@ -50,7 +50,7 @@ class Weakness extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                  child: Text(pokemon.abiliity3,
+                  child: Text(pokemon.weakness3,
                       textAlign: TextAlign.center,
                       style: TextStyle(color: white, fontSize: 20)),
                   width: 100,

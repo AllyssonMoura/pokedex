@@ -6,9 +6,9 @@ class Pokemon {
   double weight;
   String type;
   String abiliity;
-  String abiliity1;
-  String abiliity2;
-  String abiliity3;
+  String weakness1;
+  String weakness2;
+  String weakness3;
 
   Pokemon({
     required this.name,
@@ -18,8 +18,8 @@ class Pokemon {
     required this.weight,
     required this.type,
     required this.abiliity,
-    required this.abiliity1,
-    required this.abiliity2,
-    required this.abiliity3,
+    required this.weakness1,
+    required this.weakness2,
+    required this.weakness3,
   });
 }
