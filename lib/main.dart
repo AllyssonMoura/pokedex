@@ -3,5 +3,5 @@ import 'package:pokedex/screens/home/home.dart';
 
 void main() {
   runApp(MaterialApp(
-      title: "PókeDex", home: Home(), debugShowCheckedModeBanner: false));
+      title: "PokéDex", home: Home(), debugShowCheckedModeBanner: false));
 }
