@@ -10,91 +10,61 @@ class Details extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-      width: 500,
-      height: 260,
       decoration: BoxDecoration(
-          color: lightBlue,
-          borderRadius: const BorderRadius.all(const Radius.circular(10))),
+          color: Color(0xFF31a7d7), borderRadius: BorderRadius.circular(4)),
+      margin: EdgeInsets.only(top: 10),
+      padding: EdgeInsets.all(20),
       child: Column(
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 80, vertical: 20),
-                child: Column(
-                  children: [
-                    Text("Altura",
-                        style: TextStyle(
-                            color: white,
-                            fontSize: 22,
-                            fontWeight: FontWeight.w700)),
-                    Text("${this.pokemon.height} m",
+              Column(children: [
+                Text("Altura",
+                    style: TextStyle(
+                        color: white,
+                        fontSize: 22,
+                        fontWeight: FontWeight.w700)),
+                Text("${this.pokemon.height} m",
+                    style:
+                        TextStyle(fontSize: 17, fontWeight: FontWeight.w700)),
+                SizedBox(height: 20),
+                Text("Tipo",
+                    style: TextStyle(
+                        color: white,
+                        fontSize: 22,
+                        fontWeight: FontWeight.w700)),
+                SizedBox(height: 5),
+                Container(
+                    child: Text(pokemon.type,
                         style: TextStyle(
                             fontSize: 17, fontWeight: FontWeight.w700)),
-                  ],
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 80, vertical: 20),
-                child: Column(
-                  children: [
-                    Text("Peso",
-                        style: TextStyle(
-                            color: white,
-                            fontSize: 22,
-                            fontWeight: FontWeight.w700)),
-                    Text("${this.pokemon.weight} kg",
-                        style: TextStyle(
-                            fontSize: 17, fontWeight: FontWeight.w700))
-                  ],
-                ),
-              ),
-            ],
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 63, vertical: 50),
-                child: Column(
-                  children: [
-                    Text("Tipo",
-                        style: TextStyle(
-                            color: white,
-                            fontSize: 22,
-                            fontWeight: FontWeight.w700)),
-                    Container(
-                        child: Text(pokemon.type,
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                fontSize: 17, fontWeight: FontWeight.w700)),
-                        width: 80,
-                        height: 40,
-                        decoration: BoxDecoration(
-                            color: orange,
-                            borderRadius: const BorderRadius.all(
-                                const Radius.circular(10))),
-                        margin: EdgeInsets.symmetric(vertical: 5),
-                        alignment: AlignmentDirectional.center)
-                  ],
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 55, vertical: 30),
-                child: Column(
-                  children: [
-                    Text("Habilidade",
-                        style: TextStyle(
-                            color: white,
-                            fontSize: 22,
-                            fontWeight: FontWeight.w700)),
-                    Text(pokemon.ability,
-                        style: TextStyle(
-                            fontSize: 17, fontWeight: FontWeight.w700))
-                  ],
-                ),
+                    decoration: BoxDecoration(
+                        color: orange, borderRadius: BorderRadius.circular(8)),
+                    padding: EdgeInsets.all(5))
+              ]),
+              Column(
+                children: [
+                  Text("Peso",
+                      style: TextStyle(
+                          color: white,
+                          fontSize: 22,
+                          fontWeight: FontWeight.w700)),
+                  Text("${this.pokemon.weight} kg",
+                      style:
+                          TextStyle(fontSize: 17, fontWeight: FontWeight.w700)),
+                  SizedBox(height: 20),
+                  Text("Habilidade",
+                      style: TextStyle(
+                          color: white,
+                          fontSize: 22,
+                          fontWeight: FontWeight.w700)),
+                  SizedBox(height: 10),
+                  Text(pokemon.ability,
+                      style:
+                          TextStyle(fontSize: 17, fontWeight: FontWeight.w700))
+                ],
               ),
             ],
           ),

@@ -35,6 +35,7 @@ class Home extends StatelessWidget {
               Text(
                 pokemon.resume,
                 style: TextStyle(fontSize: 17),
+                textAlign: TextAlign.justify,
               ),
               SizedBox(height: 10),
               Row(mainAxisAlignment: MainAxisAlignment.center, children: [
